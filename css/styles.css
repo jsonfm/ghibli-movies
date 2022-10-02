@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -18,28 +21,41 @@ main {
     padding: 2rem 1rem;
 }
 
-main h3 {
+main .title {
     text-align: center;
     background-color: rgba(255, 255, 255, 0.065);
-    max-width: 300px;
+    max-width: 500px;
+    text-transform: uppercase;
     margin: 2rem auto;
+    margin-bottom: 3rem;
     padding: 1rem 0;
-    color: rgb(40, 40, 40);
+    color: rgb(70, 70, 70);
     font-size: 2rem;
 }
 
 .movies-container {
     display: flex;
     flex-wrap: wrap;
+    /* padding: 6rem 1rem; */
+    background: rgba( 255, 255, 255, 0.15 );
+    backdrop-filter: blur( 9px );
+    -webkit-backdrop-filter: blur( 9px );
+    border-radius: 10px;
 }
 
 .movie-container {
-    width: 400px;
+    max-width: 400px;
     margin: 0 auto;
-    background: rgba(255, 255, 255, 0.35);
+    display: flex;
+    flex-direction: column;
 }
 
 .movie-container .movie-image {
     width: 100%;
     height: clamp(300px, 80%, 600px);
+}
+
+.movie-container .movie-title {
+    font-size: 1.5rem;
+    /* margin: 1rem auto; */
 }
